@@ -1,3 +1,4 @@
+// Contiene la lógica para conectar a MongoDB con mongoose y manejar errores de conexión.
 import mongoose from "mongoose";
 import colors from 'colors'
 import { exit } from 'node:process';

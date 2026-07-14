@@ -1,3 +1,4 @@
+// Controlador de proyectos: crea, lista y obtiene un proyecto por su ID.
 import type { Request, Response } from 'express'
 import Project from '../models/Project'
 

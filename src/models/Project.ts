@@ -1,3 +1,5 @@
+// Define el esquema de Mongoose y el tipo TypeScript para la colección de proyectos en la base de datos.
+
 import mongoose, {Schema, Document} from "mongoose";
 
 //typescript

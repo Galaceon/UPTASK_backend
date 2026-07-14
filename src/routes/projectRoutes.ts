@@ -1,3 +1,4 @@
+// Define las rutas HTTP de la API de proyectos y aplica validaciones antes de llamar al controlador.
 import { Router } from "express";
 import { ProjectController } from "../controllers/ProjectController";
 import { body, param } from "express-validator";

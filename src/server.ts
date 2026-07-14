@@ -1,3 +1,4 @@
+// Configura la aplicación Express, carga variables de entorno, conecta la base de datos y monta las rutas de la API.
 import express from 'express'
 import dotenv from 'dotenv'
 import { connectDB } from './config/db'
