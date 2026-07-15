@@ -1,12 +1,14 @@
 // Define el esquema de Mongoose y el tipo TypeScript para la colección de proyectos en la base de datos.
 
-import mongoose, {Schema, Document} from "mongoose";
+import mongoose, {Schema, Document, PopulatedDoc} from "mongoose";
+import { ITask } from "./Task";
 
 //typescript
-export type ProjectType = Document & {
+export interface IProject extends Document {
     projectName: string
     clientName: string
     description: string
+    tasks: PopulatedDoc<ITask>
 }
 
 //mongoose
@@ -28,5 +30,5 @@ const ProjectSchema : Schema = new Schema({
     }
 })
 
-const Project = mongoose.model<ProjectType>('Project', ProjectSchema)
+const Project = mongoose.model<IProject>('Project', ProjectSchema)
 export default Project
